@@ -5,13 +5,13 @@
 
 Official code for **Resource-Constrained Concept Drift Adaptation (RCCDA)** — a lightweight, theoretically-grounded policy that optimally decides when to update a deployed model under strict average resource constraints while adapting to concept drift.
 
-<img src="docs/figures/optimal_path_drift.png" width="100%"/>
+<img src="figures/main_problem_illustrated.jpg" width="100%"/>
 
 > **Paper highlight**: RCCDA uses only past inference loss and a virtual queue to achieve provably bounded resource usage while greedily minimizing a convergence upper bound derived from Lyapunov drift-plus-penalty — no drift detector required.
 
 ### Key Features
-- No explicit drift detection → zero overhead from ADWIN, DDM, etc.
-- Strict theoretical guarantee on average update cost ≤ ¯λ
+- No explicit drift detection -> zero overhead from ADWIN, DDM, etc.
+- Strict theoretical guarantee on average update cost ≤ ¯\lambda
 - Greedy-optimal per-step decisions via Lyapunov framework
 - Simple threshold-based policy (Algorithm 1 in the paper)
 - Easily pluggable loss-based estimator ˆG (moving average, EWMA, etc.)
