@@ -2570,14 +2570,6 @@ def compare_schedules(schedule_types_and_sources, policy_setting_pairs_per_sched
                                np.array(mean_accuracies) - np.array(std_accuracies),
                                np.array(mean_accuracies) + np.array(std_accuracies),
                                color=color, alpha=0.2)
-            
-            # Bottom row: Average update rate with std
-            # ax_res.plot(epochs, mean_update_rates, color=color, label=f'{label_dict[policy_id]}')
-            # ax_res.fill_between(epochs, 
-            #                    np.array(mean_update_rates) - np.array(std_update_rates),
-            #                    np.array(mean_update_rates) + np.array(std_update_rates),
-            #                    color=color, alpha=0.2)
-        
         # Customize axes
         font_size_labels = 14
         tick_font_size = 12
