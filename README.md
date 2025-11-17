@@ -19,16 +19,12 @@ Official code for **Resource-Constrained Concept Drift Adaptation (RCCDA)** — 
 ### Quick Start
 
 ```bash
-# Clone the repo
 git clone https://github.com/Adampi210/RCCDA_resource_constrained_concept_drift_adaptation_code.git
 cd RCCDA_resource_constrained_concept_drift_adaptation_code
 
-# Create environment
-conda env create -f environment.yml   # or: pip install -r requirements.txt
+conda env create -f environment.yml
 conda activate rccda
 
-# Install the package
 pip install -e .
 
-# Run PACS experiment with gradual drift and budget ¯λ = 0.1
 python src/execute_dataset/evaluate_policy.py
