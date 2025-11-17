@@ -11,10 +11,10 @@ Official code for **Resource-Constrained Concept Drift Adaptation (RCCDA)** — 
 
 ### Key Features
 - No explicit drift detection -> zero overhead from ADWIN, DDM, etc.
-- Strict theoretical guarantee on average update cost ≤ ¯\lambda
+- Strict theoretical guarantee on average update cost ≤ $\bar{\lambda}$
 - Greedy-optimal per-step decisions via Lyapunov framework
 - Simple threshold-based policy (Algorithm 1 in the paper)
-- Easily pluggable loss-based estimator ˆG (moving average, EWMA, etc.)
+- Easy to compute loss-based estimator $\hat{G}$
 
 ### Quick Start
 
