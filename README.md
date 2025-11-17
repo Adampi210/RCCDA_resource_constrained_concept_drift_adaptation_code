@@ -31,9 +31,4 @@ conda activate rccda
 pip install -e .
 
 # Run PACS experiment with gradual drift and budget ¯λ = 0.1
-python experiments/train_rccda.py \
-    dataset=pacs \
-    drift.type=gradual \
-    policy.budget=0.1 \
-    policy.V=1000 \
-    seed=42
+python src/execute_dataset/evaluate_policy.py
